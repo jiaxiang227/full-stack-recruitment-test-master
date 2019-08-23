@@ -1,0 +1,84 @@
+@import '~bpk-mixins';
+
+.App {
+  &__main {
+    padding-bottom: $bpk-spacing-sm;
+    background-color: $bpk-color-gray-100;
+  }
+
+  &__header {
+    padding: $bpk-spacing-sm;
+    background-color: $bpk-color-blue-500;
+    color: $bpk-color-white;
+  }
+
+  &__header-location-row {
+    margin: $bpk-spacing-sm $bpk-spacing-none $bpk-spacing-none $bpk-spacing-none;
+    font-size: $bpk-text-xxl-font-size;
+    font-weight: $bpk-text-lg-font-weight;
+  }
+
+  &__panel-button-col {
+    padding-right: $bpk-spacing-none;
+    padding-bottom: $bpk-spacing-none;
+  }
+
+  &__panel-button-row {
+    margin: $bpk-spacing-none;
+    padding-top: $bpk-spacing-sm;
+    padding-right: $bpk-spacing-none;
+    padding-bottom: $bpk-spacing-none;
+  }
+
+  &__panel {
+    @include bpk-box-shadow-sm();
+    margin: $bpk-spacing-sm;
+    padding: $bpk-spacing-sm $bpk-spacing-sm $bpk-spacing-sm $bpk-spacing-sm;
+  }
+
+  &__panel-grid-col {
+    margin: $bpk-spacing-none;
+    padding: $bpk-spacing-none;
+    vertical-align: middle;
+  }
+
+  &__panel-img {
+    width: 32px;
+    height: 32px;
+    margin: $bpk-spacing-md $bpk-spacing-none $bpk-spacing-md $bpk-spacing-none;
+  }
+
+  &__itinerary-right {
+    text-align: right;
+  }
+
+  &__itinerary-left {
+    text-align: left;
+  }
+
+  &__itinerary-center {
+    text-align: center;
+  }
+
+  &__button-right {
+    float: right;
+    width: 7rem;
+
+  }
+
+  &__panel-grid-agent {
+    margin-top: $bpk-spacing-none;
+    margin-bottom: $bpk-spacing-none;
+    padding-top: $bpk-spacing-none;
+    padding-bottom: $bpk-spacing-none;
+    vertical-align: middle;
+  }
+
+  &__text-green {
+    color: $bpk-color-green-500;
+  }
+
+  &__text-red {
+    color: $bpk-color-red-500;
+  }
+}
