@@ -29,6 +29,8 @@
 `3) Add search engine to accept user input.`
 
 `4) Setup db to store user credentials and booking details.`
+
+`5) To support more screen resolutions.`
 ### Q) Which parts are you most proud of? And why?
 `I am really glad I could complete the test in short period of time. As mentioned, I had few experience on React.js. I planed to complete the test using traditional css and html initially, but I always want to try React.js in the past and realized this might be a perfect chance to start.`
 ### Q) Which parts did you spend the most time with? What did you find most difficult?
