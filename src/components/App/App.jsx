@@ -8,7 +8,7 @@ import LongArrowRightIcon from 'bpk-component-icon/lg/long-arrow-right';
 import { lineHeightLg, iconSizeLg, colors } from 'bpk-tokens/tokens/base.es6';
 import { withAlignment } from 'bpk-component-icon';
 import Moment from 'react-moment';
-import flights from '../../flights.json';
+import flights from '../../data/flights.json';
 
 import STYLES from './App.scss';
 import Header from './../Header';
@@ -45,7 +45,7 @@ const itineraryPanel = (itineraryInfo) => {
   const legDetail = (detail) => {
     const airlineLogo = `https://logos.skyscnr.com/images/airlines/favicon/${detail.airline_id}.png`;
     return (
-      <BpkGridContainer>
+      <BpkGridContainer key={detail.id}>
         <BpkGridRow>
           <BpkGridColumn width={1} className={getClassName('App__panel-grid-col')}>
             <img src={airlineLogo} alt="" className={getClassName('App__panel-img')} />
@@ -113,7 +113,7 @@ const itineraryPanel = (itineraryInfo) => {
     </BpkGridContainer>
   );
   return (
-    <BpkPanel className={getClassName('App__panel')}>
+    <BpkPanel className={getClassName('App__panel')} key={itineraryInfo.id}>
       {legsArray.map(detail => legDetail(detail))}
       {agentDetail}
     </BpkPanel>
